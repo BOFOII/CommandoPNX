@@ -1,22 +1,40 @@
-# commando
+# CommandoPNX
 
 Command framework for PowerNukkitX that simplifies command creation with argument validation and client-side argument listing.
 
 A Java port of [CortexPE/Commando](https://github.com/CortexPE/Commando) (PocketMine-MP command framework).
 
-## Dependencies
+## Installation (for other plugins)
 
-- PowerNukkitX 2.0.0-SNAPSHOT (provided)
+### Via JitPack (recommended)
 
-## Installation
+Add to your `pom.xml`:
 
 ```xml
-<dependency>
-    <groupId>com.bofoiii</groupId>
-    <artifactId>commando</artifactId>
-    <version>1.0.0</version>
-</dependency>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.BOFOII</groupId>
+        <artifactId>CommandoPNX</artifactId>
+        <version>v1.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
 ```
+
+### Via GitHub Releases
+
+Download the JAR from [Releases](https://github.com/BOFOII/CommandoPNX/releases) and add it to your project's classpath.
+
+## Dependencies
+
+- PowerNukkitX 2.0.0-SNAPSHOT (provided) — resolves from `maven.powernukkit.org`
 
 ## Package Structure
 
